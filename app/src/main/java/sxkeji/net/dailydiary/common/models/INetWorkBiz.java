@@ -1,4 +1,4 @@
-package sxkeji.net.dailydiary.models;
+package sxkeji.net.dailydiary.common.models;
 
 import android.content.Context;
 

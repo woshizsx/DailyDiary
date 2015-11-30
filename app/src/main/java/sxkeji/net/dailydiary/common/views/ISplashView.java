@@ -1,4 +1,4 @@
-package sxkeji.net.dailydiary.views;
+package sxkeji.net.dailydiary.common.views;
 
 /**
  * Created by zhangshixin on 2015/11/26.

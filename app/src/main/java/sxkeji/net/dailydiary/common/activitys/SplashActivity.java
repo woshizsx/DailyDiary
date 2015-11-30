@@ -1,4 +1,4 @@
-package sxkeji.net.dailydiary.activitys;
+package sxkeji.net.dailydiary.common.activitys;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import sxkeji.net.dailydiary.R;
-import sxkeji.net.dailydiary.presenters.SplashPresenter;
-import sxkeji.net.dailydiary.views.ISplashView;
+import sxkeji.net.dailydiary.common.presenters.SplashPresenter;
+import sxkeji.net.dailydiary.common.views.ISplashView;
 
 
 /**
@@ -20,7 +20,7 @@ import sxkeji.net.dailydiary.views.ISplashView;
  *
  * @description Codes there always can be better.
  */
-public class MainActivity extends Activity implements ISplashView {
+public class SplashActivity extends Activity implements ISplashView {
     private SplashPresenter mSplashPresenter;
     private ProgressDialog mProgressDialog;
 
@@ -59,11 +59,11 @@ public class MainActivity extends Activity implements ISplashView {
 
     @Override
     public void showNoNetDialog() {
-        Toast.makeText(MainActivity.this,"请检查网络",Toast.LENGTH_SHORT).show();
+        Toast.makeText(SplashActivity.this,"请检查网络",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void jumpToNextActivity() {
-        Toast.makeText(MainActivity.this,"进入下一个界面",Toast.LENGTH_SHORT).show();
+        Toast.makeText(SplashActivity.this,"进入下一个界面",Toast.LENGTH_SHORT).show();
     }
 }

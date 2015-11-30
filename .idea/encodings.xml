@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/storage" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ACacheUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/AppManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/AppUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/AssetsFileData.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/Base64Coder.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/Base64Utils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/CSadapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/Config.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ExitAlertDialogUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ExtendMediaPicker.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/FileUploadClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/FileUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/GsonUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/IOUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/LogUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/MapUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/MediaUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/NetWorkUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ObjectUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/PerssionUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ProvinceCityUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/StringUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/SystemUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ThreadManager.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/TimeCount.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/TimeUnit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/UIUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/UmengEventUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ViewUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/WebviewUtils.java" charset="UTF-8" />
+  </component>
+</project>

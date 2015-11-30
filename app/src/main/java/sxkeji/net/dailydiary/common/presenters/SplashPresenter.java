@@ -1,12 +1,12 @@
-package sxkeji.net.dailydiary.presenters;
+package sxkeji.net.dailydiary.common.presenters;
 
 import android.content.Context;
 import android.os.Handler;
 import android.os.Message;
 
-import sxkeji.net.dailydiary.models.INetWorkBiz;
-import sxkeji.net.dailydiary.models.NetWorkBiz;
-import sxkeji.net.dailydiary.views.ISplashView;
+import sxkeji.net.dailydiary.common.models.INetWorkBiz;
+import sxkeji.net.dailydiary.common.models.NetWorkBiz;
+import sxkeji.net.dailydiary.common.views.ISplashView;
 
 
 /**
