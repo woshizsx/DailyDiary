@@ -3,7 +3,6 @@ package sxkeji.net.dailydiary.utils;
 import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
@@ -198,24 +197,24 @@ public class AppUtils {
     /**
      * 获得App渠道，如果用户是从老渠道升级的，那么会返回老渠道
      */
-    public static String getAppChannel(Context context) {
-        if (BuildConfig.DEBUG) {
-            return "debug";
-        }
-        try {
-            SharedPreferences pref = context.getSharedPreferences(Config.BUGLYFA, Context.MODE_PRIVATE);
-            String channel = pref.getString(Config.APP_CHANNEL, null);
-            if (TextUtils.isEmpty(channel)) {
-                channel = getApkChannel();
-            }
-            if (!TextUtils.isEmpty(channel)) {
-                pref.edit().putString(Config.APP_CHANNEL, channel).apply();
-                return channel;
-            }
-        } catch (Exception ignore) {
-        }
-        return "noChannel";
-    }
+//    public static String getAppChannel(Context context) {
+//        if (BuildConfig.DEBUG) {
+//            return "debug";
+//        }
+//        try {
+//            SharedPreferences pref = context.getSharedPreferences(Config.BUGLYFA, Context.MODE_PRIVATE);
+//            String channel = pref.getString(Config.APP_CHANNEL, null);
+//            if (TextUtils.isEmpty(channel)) {
+//                channel = getApkChannel();
+//            }
+//            if (!TextUtils.isEmpty(channel)) {
+//                pref.edit().putString(Config.APP_CHANNEL, channel).apply();
+//                return channel;
+//            }
+//        } catch (Exception ignore) {
+//        }
+//        return "noChannel";
+//    }
 
     /**
      * 获得内置进APK的渠道

@@ -9,8 +9,6 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.RequestBody;
 import com.squareup.okhttp.Response;
-import com.yuntu.carmaster.network.HttpUrls;
-import com.yuntu.carmaster.storage.SharedPreferencesUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -21,7 +19,7 @@ import java.io.IOException;
 public class FileUploadClient {
     //////////////////////////////////////////////////////////
     ////////////////////上传接口地址
-    private static final String URL = HttpUrls.UPLOAD_FILE;
+    private static final String URL = "这里是地址";
     //////////////////////////////////////////////////////////
     ////////////////////上传文件类型
     private static final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/png");
@@ -34,7 +32,7 @@ public class FileUploadClient {
         File uploadFile = new File(filepath);
         RequestBody requestBody = new MultipartBuilder().type(MultipartBuilder.FORM)
                 .addFormDataPart("moduleName", moduleName)
-                .addFormDataPart("token", (String) SharedPreferencesUtil.getParam(ctx, Config.TOKEN, ""))
+//                .addFormDataPart("token", (String) SharedPreferencesUtil.getParam(ctx, Config.TOKEN, ""))
                 .addFormDataPart("clientVersion", "1.0.0")
 //                .addPart(
 //                        Headers.of("Content-Disposition", "form-data; name=\"clientVersion\""),

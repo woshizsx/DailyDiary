@@ -5,24 +5,18 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.NinePatchDrawable;
 import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
-import com.yuntu.carmaster.BaseApplication;
-import com.yuntu.carmaster.R;
-import com.yuntu.carmaster.views.Blur;
+
+import sxkeji.net.dailydiary.R;
+import sxkeji.net.dailydiary.common.BaseApplication;
 
 
 public class UIUtils {
@@ -60,15 +54,15 @@ public class UIUtils {
 
     public static void setImageUrl(Context context, String imageUrl, ImageView view) {
         Picasso.with(context).load(imageUrl)
-                .placeholder(R.drawable.default_image)
-                .error(R.drawable.default_image)
+                .placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
                 .into(view);
     }
 
     public static void setImageUrl(Context context, String imageUrl, Target target) {
         Picasso.with(context).load(imageUrl)
-                .placeholder(R.drawable.default_image)
-                .error(R.drawable.default_image)
+                .placeholder(R.mipmap.ic_launcher)
+                .error(R.mipmap.ic_launcher)
                 .into(target);
     }
 
@@ -259,42 +253,42 @@ public class UIUtils {
 //
 //   }
 
-    /**
-     * 高斯模糊
-     *
-     * @param ctx
-     * @param view
-     * @param textView
-     */
-    public static void ninePatchDrawable(final Context ctx, final ImageView view, final TextView textView) {
-        Drawable drawable = view.getDrawable();
-        if (drawable instanceof BitmapDrawable) {
-            synchronized (UIUtils.class) {
-
-                view.setImageBitmap(Blur.apply(ctx, ((BitmapDrawable) view.getDrawable()).getBitmap()));
-            }
-
-
-        } else if (drawable instanceof NinePatchDrawable) {
-            Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
-            Canvas canvas = new Canvas(bitmap);
-            drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
-            drawable.draw(canvas);
-            view.setImageBitmap(Blur.apply(ctx, bitmap));
-        }
-        view.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
-
-            @Override
-            public boolean onPreDraw() {
-                view.getViewTreeObserver().removeOnPreDrawListener(this);
-                view.buildDrawingCache();
-                Bitmap bmp = view.getDrawingCache();
-                ViewUtils.blur(ctx, bmp, textView);
-                return true;
-            }
-        });
-
-    }
+//    /**
+//     * 高斯模糊
+//     *
+//     * @param ctx
+//     * @param view
+//     * @param textView
+//     */
+//    public static void ninePatchDrawable(final Context ctx, final ImageView view, final TextView textView) {
+//        Drawable drawable = view.getDrawable();
+//        if (drawable instanceof BitmapDrawable) {
+//            synchronized (UIUtils.class) {
+//
+//                view.setImageBitmap(Blur.apply(ctx, ((BitmapDrawable) view.getDrawable()).getBitmap()));
+//            }
+//
+//
+//        } else if (drawable instanceof NinePatchDrawable) {
+//            Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+//            Canvas canvas = new Canvas(bitmap);
+//            drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
+//            drawable.draw(canvas);
+//            view.setImageBitmap(Blur.apply(ctx, bitmap));
+//        }
+//        view.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+//
+//            @Override
+//            public boolean onPreDraw() {
+//                view.getViewTreeObserver().removeOnPreDrawListener(this);
+//                view.buildDrawingCache();
+//                Bitmap bmp = view.getDrawingCache();
+//                ViewUtils.blur(ctx, bmp, textView);
+//                return true;
+//            }
+//        });
+//
+//    }
 }
 
 

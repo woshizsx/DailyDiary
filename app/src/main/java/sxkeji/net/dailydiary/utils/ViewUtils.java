@@ -1,18 +1,10 @@
 package sxkeji.net.dailydiary.utils;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
-
-import android.graphics.Canvas;
-
 import android.graphics.BitmapFactory;
-
 import android.graphics.Matrix;
 import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
-import android.os.Build;
-import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.MotionEvent;
 import android.view.View;
@@ -20,15 +12,13 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.TextView;
 
-
-import com.yuntu.carmaster.BaseApplication;
-import com.yuntu.carmaster.views.Blur;
-
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+
+import sxkeji.net.dailydiary.common.BaseApplication;
 
 
 public class ViewUtils {
@@ -189,15 +179,15 @@ public class ViewUtils {
         return BaseApplication.getInstance().getResources().getDisplayMetrics().density * px;
     }
 
-    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
-    public static void blur(Context context, Bitmap bkg, View view) {
-        int radius = 20;
-        Bitmap overlay = Bitmap.createBitmap((int) (view.getMeasuredWidth()), (int) (view.getMeasuredHeight()), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(overlay);
-        canvas.translate(-view.getLeft(), -view.getTop());
-        canvas.drawBitmap(bkg, 0, 0, null);
-        view.setBackground(new BitmapDrawable(context.getResources(), Blur.apply(context, overlay, radius)));
-    }
+//    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
+//    public static void blur(Context context, Bitmap bkg, View view) {
+//        int radius = 20;
+//        Bitmap overlay = Bitmap.createBitmap((int) (view.getMeasuredWidth()), (int) (view.getMeasuredHeight()), Bitmap.Config.ARGB_8888);
+//        Canvas canvas = new Canvas(overlay);
+//        canvas.translate(-view.getLeft(), -view.getTop());
+//        canvas.drawBitmap(bkg, 0, 0, null);
+//        view.setBackground(new BitmapDrawable(context.getResources(), Blur.apply(context, overlay, radius)));
+//    }
 
     public static void tvUnderLine(TextView textView) {
         textView.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG); //下划线

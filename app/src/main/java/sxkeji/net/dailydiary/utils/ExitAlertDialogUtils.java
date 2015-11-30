@@ -9,7 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
-import com.yuntu.carmaster.R;
+import sxkeji.net.dailydiary.R;
+
 
 /**
  * 退出时弹出的对话框
@@ -74,13 +75,13 @@ public class ExitAlertDialogUtils {
             @Override
             public void onClick(View v) {
                 mDialog.dismiss();
-                if (!TextUtils.isEmpty(msg)) {
-                    if (msg.equals(mContext.getResources().getString(R.string.cancel_reset_pwd))) {
-                        UmengEventUtils.onEventId(mContext, UmengEventUtils.YesToQuitResetPwd);
-                    } else {
-                        UmengEventUtils.onEventId(mContext, UmengEventUtils.YesToQuitApplyCarMaster);
-                    }
-                }
+//                if (!TextUtils.isEmpty(msg)) {
+//                    if (msg.equals(mContext.getResources().getString(R.string.cancel_reset_pwd))) {
+//                        UmengEventUtils.onEventId(mContext, UmengEventUtils.YesToQuitResetPwd);
+//                    } else {
+//                        UmengEventUtils.onEventId(mContext, UmengEventUtils.YesToQuitApplyCarMaster);
+//                    }
+//                }
                 ((Activity) mContext).finish();
 
             }
@@ -88,13 +89,13 @@ public class ExitAlertDialogUtils {
         tv_no.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!TextUtils.isEmpty(msg)) {
-                    if (msg.equals(mContext.getResources().getString(R.string.cancel_reset_pwd))) {
-                        UmengEventUtils.onEventId(mContext, UmengEventUtils.NotToQuitResetPwd);
-                    } else {
-                        UmengEventUtils.onEventId(mContext, UmengEventUtils.NotToQuitApplyCarMaster);
-                    }
-                }
+//                if (!TextUtils.isEmpty(msg)) {
+//                    if (msg.equals(mContext.getResources().getString(R.string.cancel_reset_pwd))) {
+//                        UmengEventUtils.onEventId(mContext, UmengEventUtils.NotToQuitResetPwd);
+//                    } else {
+//                        UmengEventUtils.onEventId(mContext, UmengEventUtils.NotToQuitApplyCarMaster);
+//                    }
+//                }
                 mDialog.dismiss();
             }
         });

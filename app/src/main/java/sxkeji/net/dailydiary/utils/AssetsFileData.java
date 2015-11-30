@@ -3,7 +3,6 @@ package sxkeji.net.dailydiary.utils;
 import android.content.Context;
 
 import com.google.gson.Gson;
-import com.yuntu.carmaster.views.sortlistview.CharacterParser;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -12,7 +11,7 @@ import java.io.InputStreamReader;
  * Created by renbingwu on 2015/10/13.
  */
 public class AssetsFileData {
-    private CharacterParser characterParser;
+//    private CharacterParser characterParser;
     private ThreadLocal<Object> t = new ThreadLocal<Object>();
 
     //    /**

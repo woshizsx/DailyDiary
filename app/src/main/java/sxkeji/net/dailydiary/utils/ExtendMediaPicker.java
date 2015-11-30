@@ -18,9 +18,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.PopupWindow;
 
-import com.yuntu.carmaster.R;
-
 import java.io.File;
+
+import sxkeji.net.dailydiary.R;
 
 
 public class ExtendMediaPicker implements View.OnClickListener {
@@ -224,7 +224,6 @@ public class ExtendMediaPicker implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.tv_camer:
-                UmengEventUtils.onEventId(mActivity, UmengEventUtils.SetHeaderByTakingAPhoto);
                 if (PerssionUtils.checkPerssion(mActivity, Manifest.permission.CAMERA) && PerssionUtils.checkPerssion(mActivity, Manifest.permission.READ_EXTERNAL_STORAGE)) {
 
                     openSystemCamera();
@@ -232,14 +231,12 @@ public class ExtendMediaPicker implements View.OnClickListener {
                 }
                 break;
             case R.id.tv_gallery:
-                UmengEventUtils.onEventId(mActivity, UmengEventUtils.SetHeaderFromAlbums);
                 if (PerssionUtils.checkPerssion(mActivity, Manifest.permission.CAMERA) && PerssionUtils.checkPerssion(mActivity, Manifest.permission.READ_EXTERNAL_STORAGE)) {
                     openSystemPickImage();
                     disMissPop();
                 }
                 break;
             case R.id.tv_cancle:
-                UmengEventUtils.onEventId(mActivity, UmengEventUtils.CancelSetHeader);
                 disMissPop();
                 break;
         }
