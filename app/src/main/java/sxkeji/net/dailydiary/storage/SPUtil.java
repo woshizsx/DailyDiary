@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
  *
  * @description Codes there always can be better.
  */
-public class SharedPreferencesUtil {
+public class SPUtil {
 
     private static final String FILE_NAME = Constant.appName;
 
@@ -22,7 +22,7 @@ public class SharedPreferencesUtil {
      * @param object
      */
     public static void setParam(Context context, String key, Object object) {
-        synchronized (SharedPreferencesUtil.class) {
+        synchronized (SPUtil.class) {
             String type = object.getClass().getSimpleName();
             SharedPreferences sp = context.getSharedPreferences(FILE_NAME, Context.MODE_PRIVATE);
             SharedPreferences.Editor editor = sp.edit();
@@ -53,7 +53,7 @@ public class SharedPreferencesUtil {
      * @return
      */
     public static Object getParam(Context context, String key, Object defaultObject) {
-        synchronized (SharedPreferencesUtil.class) {
+        synchronized (SPUtil.class) {
             String type = defaultObject.getClass().getSimpleName();
             if (context == null) {
                 return null;

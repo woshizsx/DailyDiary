@@ -32,7 +32,7 @@ public class FileUploadClient {
         File uploadFile = new File(filepath);
         RequestBody requestBody = new MultipartBuilder().type(MultipartBuilder.FORM)
                 .addFormDataPart("moduleName", moduleName)
-//                .addFormDataPart("token", (String) SharedPreferencesUtil.getParam(ctx, Config.TOKEN, ""))
+//                .addFormDataPart("token", (String) SPUtil.getParam(ctx, Config.TOKEN, ""))
                 .addFormDataPart("clientVersion", "1.0.0")
 //                .addPart(
 //                        Headers.of("Content-Disposition", "form-data; name=\"clientVersion\""),
@@ -42,7 +42,7 @@ public class FileUploadClient {
 //                        RequestBody.create(null, moduleName))
 //                .addPart(
 //                        Headers.of("Content-Disposition", "form-data; name=\"token\""),
-//                        RequestBody.create(null, (String) SharedPreferencesUtil.getParam(ctx, Config.TOKEN, "")))
+//                        RequestBody.create(null, (String) SPUtil.getParam(ctx, Config.TOKEN, "")))
 //                .addPart(
 //                        Headers.of("Content-Disposition", "form-data; name=\"imageFile\""),
 //                        RequestBody.create(MEDIA_TYPE_PNG, uploadFile))

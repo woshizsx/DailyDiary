@@ -1,4 +1,4 @@
-package sxkeji.net.dailydiary.utils;
+package sxkeji.net.dailydiary.widgets;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -21,6 +21,10 @@ import android.widget.PopupWindow;
 import java.io.File;
 
 import sxkeji.net.dailydiary.R;
+import sxkeji.net.dailydiary.utils.LogUtils;
+import sxkeji.net.dailydiary.utils.MediaUtils;
+import sxkeji.net.dailydiary.utils.PerssionUtils;
+import sxkeji.net.dailydiary.utils.UIUtils;
 
 
 public class ExtendMediaPicker implements View.OnClickListener {

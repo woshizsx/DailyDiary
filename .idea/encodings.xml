@@ -13,8 +13,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/Base64Utils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/CSadapter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/Config.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ExitAlertDialogUtils.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ExtendMediaPicker.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/FileUploadClient.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/FileUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/GsonUtils.java" charset="UTF-8" />
@@ -35,6 +33,8 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/UmengEventUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ViewUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/WebviewUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/widgets/ExitAlertDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/widgets/ExtendMediaPicker.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/jniLibs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/anim" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/dialog_bg_quit.xml" charset="UTF-8" />

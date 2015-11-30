@@ -1,4 +1,4 @@
-package sxkeji.net.dailydiary.utils;
+package sxkeji.net.dailydiary.widgets;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -10,13 +10,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import sxkeji.net.dailydiary.R;
+import sxkeji.net.dailydiary.utils.UIUtils;
 
 
 /**
  * 退出时弹出的对话框
  * Created by zhangshixin on 2015/11/12.
  */
-public class ExitAlertDialogUtils {
+public class ExitAlertDialog {
     private Context mContext;
     private Dialog mDialog;
     private int mLayoutId;
@@ -26,7 +27,7 @@ public class ExitAlertDialogUtils {
     private View mDialogView;
     private String msg;
 
-    public ExitAlertDialogUtils(Context context) {
+    public ExitAlertDialog(Context context) {
         this.mContext = context;
         setDefaultParams();
     }
