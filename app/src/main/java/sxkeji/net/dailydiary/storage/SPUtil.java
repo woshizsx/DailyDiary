@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 /**
+ * SharedPreference操作类，简化操作
  * Created by zhangshixin on 2015/11/30.
  *
  * @description Codes there always can be better.

@@ -72,6 +72,8 @@ public class NetWorkUtils {
      * @return true, if is network available
      */
     public static boolean isNetworkAvailable(Context context) {
+        if(context == null)
+            return false;
         try {
             ConnectivityManager connectivity = (ConnectivityManager) context
                     .getSystemService(Context.CONNECTIVITY_SERVICE);

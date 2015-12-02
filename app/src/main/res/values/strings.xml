@@ -3,5 +3,6 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="main_activity">主页</string>
+    <string name="activity_main">主页</string>
+    <string name="activity_test">测试</string>
 </resources>

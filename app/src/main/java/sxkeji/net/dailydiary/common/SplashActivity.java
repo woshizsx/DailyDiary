@@ -2,10 +2,12 @@ package sxkeji.net.dailydiary.common;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
 import sxkeji.net.dailydiary.R;
+import sxkeji.net.dailydiary.common.activitys.RecyclerTestActivity;
 import sxkeji.net.dailydiary.common.presenters.SplashPresenter;
 import sxkeji.net.dailydiary.common.views.ISplashView;
 
@@ -27,7 +29,7 @@ public class SplashActivity extends Activity implements ISplashView {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
 
         mSplashPresenter = new SplashPresenter(this);
     }
@@ -53,7 +55,8 @@ public class SplashActivity extends Activity implements ISplashView {
     @Override
     public void hideProgressDialog() {
         if(mProgressDialog != null && mProgressDialog.isShowing()){
-            mProgressDialog.hide();
+            //mProgressDialog.hide();
+            mProgressDialog.dismiss();
         }
     }
 
@@ -64,6 +67,13 @@ public class SplashActivity extends Activity implements ISplashView {
 
     @Override
     public void jumpToNextActivity() {
-        Toast.makeText(SplashActivity.this,"进入下一个界面",Toast.LENGTH_SHORT).show();
+        startActivity(new Intent(SplashActivity.this, RecyclerTestActivity.class));
+        finish();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        hideProgressDialog();
     }
 }

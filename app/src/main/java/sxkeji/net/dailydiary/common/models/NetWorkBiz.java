@@ -1,8 +1,8 @@
 package sxkeji.net.dailydiary.common.models;
 
 import android.content.Context;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
+
+import sxkeji.net.dailydiary.utils.NetWorkUtils;
 
 /**
  * Created by zhangshixin on 2015/11/26.
@@ -12,14 +12,6 @@ import android.net.NetworkInfo;
 public class NetWorkBiz implements INetWorkBiz {
     @Override
     public boolean isNetWorkConnected(Context context) {
-        if(context != null){
-            ConnectivityManager  mConnectivityManager = (ConnectivityManager)
-                    context.getSystemService(Context.CONNECTIVITY_SERVICE);
-            NetworkInfo mNetworkInfo = mConnectivityManager.getActiveNetworkInfo();
-            if(mNetworkInfo != null){
-                return mNetworkInfo.isAvailable();
-            }
-        }
-        return false;
+        return NetWorkUtils.isNetworkAvailable(context);
     }
 }

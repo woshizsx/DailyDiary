@@ -32,7 +32,9 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 /**
- * Created by zhangshixin on 2015/11/30.
+ * 本地缓存操作
+ * Created by zhangshixin on 2015/12/2.
+ * Blog : http://blog.csdn.net/u011240877
  *
  * @description Codes there always can be better.
  */
