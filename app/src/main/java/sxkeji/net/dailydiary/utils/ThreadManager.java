@@ -14,13 +14,14 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.ThreadPoolExecutor.AbortPolicy;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * 一个简易的线程池管理类，提供三个线程池
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
  *
- * @author mwqi
+ * @description Codes there always can be better.
  */
 public class ThreadManager {
     public static final String DEFAULT_SINGLE_POOL_NAME = "DEFAULT_SINGLE_POOL_NAME";

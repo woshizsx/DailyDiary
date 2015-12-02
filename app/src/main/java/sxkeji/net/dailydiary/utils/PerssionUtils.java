@@ -7,7 +7,11 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 
 /**
- * Created by renbingwu on 2015/11/5.
+ * 6.0需要的权限类，需要主动提示用户是否允许
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
  */
 public class PerssionUtils {
     public static boolean checkPerssion(Context context, String perssion) {

@@ -8,8 +8,10 @@ import java.util.Stack;
 
 /**
  * 应用程序Activity管理类：用于Activity管理和应用程序退出
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
  *
- *
+ * @description Codes there always can be better.
  */
 public class AppManager {
 

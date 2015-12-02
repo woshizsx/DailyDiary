@@ -26,7 +26,13 @@ import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.List;
 
-
+/**
+ * 获取手机系统相关的工具类
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
+ */
 public class SystemUtils {
 
 	/** 获取android系统版本号 */

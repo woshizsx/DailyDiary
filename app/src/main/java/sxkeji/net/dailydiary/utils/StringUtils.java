@@ -13,7 +13,13 @@ import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+/**
+ * 一些常用的字符串类型判断，正则表达式
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
+ */
 public class StringUtils {
     public final static String UTF_8 = "utf-8";
     private static final String REGEX_ID_CARD = "(^\\d{18}$)|(^\\d{15}$)";  //正则表达式：验证身份证

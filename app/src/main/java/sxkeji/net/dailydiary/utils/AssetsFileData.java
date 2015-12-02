@@ -8,7 +8,10 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 /**
- * Created by renbingwu on 2015/10/13.
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
  */
 public class AssetsFileData {
 //    private CharacterParser characterParser;

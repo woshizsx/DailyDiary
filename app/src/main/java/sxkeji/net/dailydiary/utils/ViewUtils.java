@@ -20,7 +20,13 @@ import java.net.URL;
 
 import sxkeji.net.dailydiary.common.BaseApplication;
 
-
+/**
+ * View相关工具类
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
+ */
 public class ViewUtils {
     /**
      * 把自身从父View中移除

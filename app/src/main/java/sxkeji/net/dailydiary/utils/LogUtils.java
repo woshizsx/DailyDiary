@@ -11,9 +11,11 @@ import android.util.Log;
 import java.util.List;
 
 /**
- * 日志输出控制类 (Description)
+ * 日志输出控制类
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
  *
- * @author mwqi
+ * @description Codes there always can be better.
  */
 public class LogUtils {
     /**

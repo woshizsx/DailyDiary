@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The creator is Leone && E-mail: butleone@163.com
+ * 一些常用的对象判断方法集合
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
  *
- * @author Leone
- * @date 15/10/25
- * @description Edit it! Change it! Beat it! Whatever, just do it!
+ * @description Codes there always can be better.
  */
 public class ObjectUtils {
 

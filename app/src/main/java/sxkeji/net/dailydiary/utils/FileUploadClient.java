@@ -14,7 +14,11 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Created by qiujie on 2015/11/5.
+ * 文件上传工具类、待完善
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
  */
 public class FileUploadClient {
     //////////////////////////////////////////////////////////

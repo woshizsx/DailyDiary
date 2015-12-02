@@ -14,8 +14,10 @@ import android.provider.DocumentsContract;
 import android.provider.MediaStore;
 
 /**
- * com.yuntu.carmaster.utils
- * Created by qiujie on 15/11/2.
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
  */
 public class MediaUtils {
     /**

@@ -5,14 +5,13 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.telephony.TelephonyManager;
 import android.text.TextUtils;
-import android.util.Log;
 
 /**
- * The creator is Leone && E-mail: butleone@163.com
+ * 网络相关工具类
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
  *
- * @author Leone
- * @date 15/10/25
- * @description Edit it! Change it! Beat it! Whatever, just do it!
+ * @description Codes there always can be better.
  */
 public class NetWorkUtils {
 

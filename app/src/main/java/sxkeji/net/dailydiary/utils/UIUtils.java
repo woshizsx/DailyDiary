@@ -18,7 +18,12 @@ import com.squareup.picasso.Target;
 import sxkeji.net.dailydiary.R;
 import sxkeji.net.dailydiary.common.BaseApplication;
 
-
+/**
+ * Created by zhangshixin on 2015/11/26.
+ * Blog : http://blog.csdn.net/u011240877
+ *
+ * @description Codes there always can be better.
+ */
 public class UIUtils {
     public static BaseApplication getApplication() {
         return BaseApplication.getApplication();
@@ -211,47 +216,6 @@ public class UIUtils {
         toast.show();
     }
 
-//    /***
-//     *
-//     * @param intent
-//     * @param requestCode    9999默认嘛
-//     */
-//    public static void startActivityForResult(Intent intent,int requestCode){
-//        BaseFragmentActivity activity = BaseFragmentActivity.getForegroundActivity();
-//        if(requestCode==0){
-//
-//
-//        if(activity != null){
-//            activity.startActivity(intent);
-//            activity.overridePendingTransition(R.anim.slide_down_in, R.anim.slide_down_out);
-//
-//        }else{
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            getContext().startActivity(intent);
-//            activity.overridePendingTransition(R.anim.slide_down_in, R.anim.slide_down_out);
-//        }
-//        }else{
-//            if(activity != null){
-//                activity.startActivityForResult(intent,requestCode);
-//                activity.overridePendingTransition(R.anim.slide_down_in, R.anim.slide_down_out);
-//
-//            }else{
-//                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//                activity.startActivityForResult(intent,requestCode);
-//                activity.overridePendingTransition(R.anim.slide_down_in, R.anim.slide_down_out);
-//            }
-//        }
-//    }
-
-
-//   public static void openAndCloseDrawer(DrawerLayout dl, View view){
-//       if (dl.isDrawerOpen(view)) {
-//           dl.closeDrawer(Gravity.END);
-//       } else {
-//           dl.openDrawer(Gravity.END);
-//       }
-//
-//   }
 
 //    /**
 //     * 高斯模糊
