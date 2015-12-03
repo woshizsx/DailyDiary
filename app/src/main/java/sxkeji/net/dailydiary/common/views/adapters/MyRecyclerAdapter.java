@@ -18,17 +18,19 @@ import sxkeji.net.dailydiary.R;
  */
 public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.ViewHolder>{
     private List<String> mData;
+    private int mLayoutId;
     private OnItemClickListener mOnItemClickListener;
 
-    public MyRecyclerAdapter(List<String> mData){
+    public MyRecyclerAdapter(List<String> mData,int mLayoutId){
         this.mData = mData;
+        this.mLayoutId = mLayoutId;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
         //解析View后传递给ViewHolder
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(
-                R.layout.recycler_test_item, viewGroup, false);
+                mLayoutId, viewGroup, false);
         return new ViewHolder(view);
     }
 

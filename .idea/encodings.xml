@@ -24,7 +24,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/SystemUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ThreadManager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/TimeCount.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/TimeUnit.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/UIUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/ViewUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/widgets/ExitAlertDialog.java" charset="UTF-8" />
@@ -35,8 +34,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_cancel_apply_master.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/pop_chose_photo.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test.jpg" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test1.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test1.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test2.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test3.jpg" charset="UTF-8" />

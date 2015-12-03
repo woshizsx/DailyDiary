@@ -13,6 +13,9 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.List;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 import sxkeji.net.dailydiary.R;
 import sxkeji.net.dailydiary.common.views.adapters.MyRecyclerAdapter;
 
@@ -23,6 +26,9 @@ import sxkeji.net.dailydiary.common.views.adapters.MyRecyclerAdapter;
  * @description Codes there always can be better.
  */
 public class RecyclerTestActivity extends Activity {
+    @Bind(R.id.btn_jump)
+    Button btnJump;
+
     private Button btn_change;
     private RecyclerView recyclerView;
     private MyRecyclerAdapter mRecyclerAdapter;
@@ -34,16 +40,22 @@ public class RecyclerTestActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-
+        ButterKnife.bind(this);
         initView();
         setRecyclerData();
     }
 
+    @OnClick(R.id.btn_jump)
+    void jumpToNext(){
+//        Intent intent = new Intent(RecyclerTestActivity.this, MainActivity.class);
+//        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
+
     private void setRecyclerData() {
-        for(int i = 0;i < 10;i++)
+        for (int i = 0; i < 10; i++)
             listData.add("RecyclerView");
 
-        mRecyclerAdapter = new MyRecyclerAdapter(listData);
+        mRecyclerAdapter = new MyRecyclerAdapter(listData, R.layout.recycler_test_item);
         recyclerView.setAdapter(mRecyclerAdapter);
         mRecyclerAdapter.setmOnItemClickListener(new MyRecyclerAdapter.OnItemClickListener() {
             @Override
@@ -93,6 +105,7 @@ public class RecyclerTestActivity extends Activity {
             mRecyclerAdapter.notifyDataSetChanged();
         }
     }
+
     public void delRecycler(View view) {
         int position = listData.size();
         if (position > 0) {
