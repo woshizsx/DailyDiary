@@ -3,6 +3,8 @@ package sxkeji.net.dailydiary.common.activitys;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.app.Activity;
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -47,8 +49,9 @@ public class RecyclerTestActivity extends Activity {
 
     @OnClick(R.id.btn_jump)
     void jumpToNext(){
-//        Intent intent = new Intent(RecyclerTestActivity.this, MainActivity.class);
-//        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        Intent intent = new Intent(RecyclerTestActivity.this, MainActivity.class);
+        startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this
+                , btnJump ,"jump").toBundle());
     }
 
     private void setRecyclerData() {

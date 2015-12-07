@@ -1,14 +1,18 @@
 package sxkeji.net.dailydiary.common.activitys;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Outline;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.graphics.Palette;
+import android.transition.Fade;
 import android.view.View;
 import android.view.ViewOutlineProvider;
+import android.view.Window;
 import android.widget.TextView;
 
 import butterknife.Bind;
@@ -34,8 +38,10 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setTransitionAnimation();
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
 
 
         ViewOutlineProvider viewOutlineProvider =
@@ -47,6 +53,15 @@ public class MainActivity extends Activity {
                 };
         tvTest.setOutlineProvider(viewOutlineProvider);
         testPalette();
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private void setTransitionAnimation() {
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+//        getWindow().setEnterTransition(new Explode());
+//        getWindow().setEnterTransition(new Fade());
+//        getWindow().setExitTransition(new Slide());
+        getWindow().setExitTransition(new Fade());
     }
 
     private void testPalette() {

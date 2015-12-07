@@ -36,8 +36,10 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Vi
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int i) {
-        //数据填充到ViewHolder的元素中
-        viewHolder.mTextView.setText(mData.get(i) + i);
+        if(mData != null && mData.size() > 0) {
+            //数据填充到ViewHolder的元素中
+            viewHolder.mTextView.setText(mData.get(i) + i);
+        }
     }
 
     @Override
