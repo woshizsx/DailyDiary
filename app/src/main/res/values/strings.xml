@@ -5,4 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="activity_main">主页</string>
     <string name="activity_test">测试</string>
+
+    <!-- 网络请求 -->
+    <string name="network_no">请检查网络连接</string>
 </resources>

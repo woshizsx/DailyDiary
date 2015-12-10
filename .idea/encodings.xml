@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/app/libs/bugly_1.2.6_release.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/libs/commons-codec-1.10.jar" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/common/BaseApplication.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/HttpClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/HttpResponseHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/LoadingPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/helper/ProgressHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/listener/ProgressListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/listener/impl/UIProgressListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/listener/impl/handler/ProgressHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/listener/impl/model/ProgressModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/progress/ProgressRequestBody.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/http/coreprogress/progress/ProgressResponseBody.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/storage" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/AppManager.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/sxkeji/net/dailydiary/utils/AppUtils.java" charset="UTF-8" />
@@ -31,11 +41,19 @@
     <file url="file://$PROJECT_DIR$/app/src/main/jniLibs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/anim" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/dialog_bg_quit.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/loading_small.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/dialog_cancel_apply_master.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/empty_view.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/error_view.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/loading_view.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/nonet_view.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/pop_chose_photo.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test1.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test2.jpg" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/test3.jpg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_loading_s.png" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/loadpage_top.png" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
