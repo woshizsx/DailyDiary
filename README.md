@@ -1,5 +1,6 @@
 # DailyDiary
-A simple but functional diary app.&lt;br/>一款简单但功能实用的日记应用.
+<p>A simple but functional diary app.<p/>
+一款简单但功能实用的日记应用.
 
 1.branches:
     develop:开发中分支
